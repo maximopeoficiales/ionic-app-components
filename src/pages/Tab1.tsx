@@ -1,24 +1,19 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
-import './Tab1.css';
+import { IonActionSheet, IonAlert, IonBadges, IonBreadcrumbsComponent, IonCardComponent, IonCheckBoxComponent, IonChipComponent, IonDatetimeComponent, IonRippleEffectComponent } from '../components';
+import { TemplatePage } from './TemplatePage';
 
 const Tab1: React.FC = () => {
   return (
-    <IonPage>
-      <IonHeader>
-        <IonToolbar>
-          <IonTitle>Tab 1</IonTitle>
-        </IonToolbar>
-      </IonHeader>
-      <IonContent fullscreen>
-        <IonHeader collapse="condense">
-          <IonToolbar>
-            <IonTitle size="large">Tab 1</IonTitle>
-          </IonToolbar>
-        </IonHeader>
-        <ExploreContainer name="Tab 1 page" />
-      </IonContent>
-    </IonPage>
+    <TemplatePage title='IonActionSheet'>
+      <IonActionSheet />
+      <IonAlert />
+      <IonBadges />
+      <IonBreadcrumbsComponent />
+      <IonRippleEffectComponent />
+      <IonCardComponent />
+      <IonCheckBoxComponent />
+      <IonChipComponent />
+      <IonDatetimeComponent />
+    </TemplatePage>
   );
 };
 
